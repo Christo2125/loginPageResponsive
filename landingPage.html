@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+      
+            <nav class="col-md-2 d-none d-md-block sidebar bg-light p-3">
+                <h2 class="text-center my-4">BankDash</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Transactions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Accounts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Investments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Credit Cards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Loans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">My Privileges</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+                </ul>
+            </nav>
+
+            
+            <main class="col-md-10 ms-sm-auto px-md-4">
+                <header class="d-flex justify-content-between align-items-center my-4">
+                    <h1>Overview</h1>
+                    <input type="text" class="form-control w-25" placeholder="Search for something">
+                </header>
+
+                <section class="mb-4">
+                    <div class="card-container">
+                        <div class="card bg-primary text-white m-2 card-style">
+                          <div class="card-body">
+                            <p class="mb-1">Balance</p>
+                            <h3>$5,756</h3>
+                            <p class="mb-1">Card Holder: Eddy Cusuma</p>
+                            <p class="mb-1">Valid Thru: 12/22</p>
+                            <p>**** **** **** 1234</p>
+                          </div>
+                        </div>
+                        <div class="card bg-primary text-white m-2 card-style">
+                          <div class="card-body">
+                            <p class="mb-1">Balance</p>
+                            <h3>$12,430</h3>
+                            <p class="mb-1">Card Holder: Jane Doe</p>
+                            <p class="mb-1">Valid Thru: 05/24</p>
+                            <p>**** **** **** 5678</p>
+                          </div>
+                        </div>
+                        <div class="card bg-primary text-white m-2 card-style">
+                          <div class="card-body">
+                            <p class="mb-1">Balance</p>
+                            <h3>$3,290</h3>
+                            <p class="mb-1">Card Holder: John Smith</p>
+                            <p class="mb-1">Valid Thru: 08/23</p>
+                            <p>**** **** **** 9101</p>
+                          </div>
+                        </div>
+                        <div class="card bg-primary text-white m-2 card-style">
+                          <div class="card-body">
+                            <p class="mb-1">Balance</p>
+                            <h3>$780</h3>
+                            <p class="mb-1">Card Holder: Alice Brown</p>
+                            <p class="mb-1">Valid Thru: 03/25</p>
+                            <p>**** **** **** 3456</p>
+                          </div>
+                        </div>
+                      </div>
+                </section>
+
+                <section class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Recent Transactions</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Deposit from my Card -$850</li>
+                                    <li class="list-group-item">Deposit Paypal +$2,500</li>
+                                    <li class="list-group-item">Jemi Wilson +$5,400</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Weekly Activity</h5>
+                                <div class="chart d-flex justify-content-around align-items-end" style="height: 200px;">
+                                    <div class="bar bg-primary" style="height: 60%; width: 20px;">Sat</div>
+                                    <div class="bar bg-primary" style="height: 80%; width: 20px;">Sun</div>
+                                    <div class="bar bg-primary" style="height: 100%; width: 20px;">Mon</div>
+                                    <div class="bar bg-primary" style="height: 40%; width: 20px;">Tue</div>
+                                    <div class="bar bg-primary" style="height: 70%; width: 20px;">Wed</div>
+                                    <div class="bar bg-primary" style="height: 90%; width: 20px;">Thu</div>
+                                    <div class="bar bg-primary" style="height: 50%; width: 20px;">Fri</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Expense Statistics</h5>
+                               
+  
+                                <div class="pie-chart-container">
+                                    <div class="pie-chart"></div>
+                                    <div class="label entertainment">30%<br>Entertainment</div>
+                                    <div class="label bill-expense">15%<br>Bill Expense</div>
+                                    <div class="label investment">20%<br>Investment</div>
+                                    <div class="label others">35%<br>Others</div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <div class="dashboard-container container">
+    <!-- Quick Transfer Section -->
+    <div class="transfer-section">
+      <h5 class="transfer-title">Quick Transfer</h5>
+      <div class="user-profiles">
+        <div class="user-profile">
+          <div class="user-profile-image" id="user-profile-A"></div>
+          <div>
+            <p class="mb-0 fw-bold">Livia Bator</p>
+            <p class="mb-0 text-muted">CEO</p>
+          </div>
+        </div>
+        <div class="user-profile">
+          <div class="user-profile-image" id="user-profile-B"></div>
+          <div>
+            <p class="mb-0 fw-bold">Randy Press</p>
+            <p class="mb-0 text-muted">Director</p>
+          </div>
+        </div>
+        <div class="user-profile">
+          <div class="user-profile-image" id="user-profile-C"></div>
+          <div>
+            <p class="mb-0 fw-bold">Workman</p>
+            <p class="mb-0 text-muted">Designer</p>
+          </div>
+        </div>
+        <button class="arrow-button">
+          >
+        </button>
+      </div>
+      <div class="transfer-input-group">
+        <input type="text" class="amount-input" placeholder="Write Amount">
+        <button class="send-button">
+          Send <i class="bi bi-send-fill"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Balance History Section -->
+    <div class="history-section">
+      <h5 class="history-title">Balance History</h5>
+      <div class="chart-container">
+        <canvas id="balanceChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
